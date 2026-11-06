@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <title>Escapa de la pekka</title>
+</head>
+<body>
+    <h1>Escapa de la pekka</h1>
+    <div id="timer">Tiempo: 0s</div>
+    <div id="game-area">
+        <div id="start-screen">
+            <button id="start-btn">Jugar</button>
+        </div>
+        <div id="player" class="character"></div>
+        <div id="pekka" class="character"></div>
+    </div>
+
+    <div id="settings-panel">
+        <h3>Configuración</h3>
+        <label>
+            <input type="checkbox" id="mute-checkbox"> Silenciar música
+        </label>
+        <label>
+            Velocidad Jugador: <span id="player-speed-val">4</span>
+            <input type="range" id="player-speed-range" min="1" max="5" step="0.5" value="4">
+        </label>
+        <label>
+            Velocidad Pekka: <span id="pekka-speed-val">1</span>
+            <input type="range" id="pekka-speed-range" min="1" max="5" step="0.5" value="1">
+        </label>
+    </div>
+
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
